@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Voice</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h1>Text to Voice</h1>
+  <textarea id="text-to-voice" rows="10" cols="50" placeholder="Type something to convert to speech" required>
+Hello world, my name's Hil
+  </textarea>
+  <select id="voice-select">
+    <option value="" disabled selected>Select a voice</option>
+  </select>
+  <div class="control">
+    <label>Volume</label>
+    <input type="range" id="volumeSlider" class="range-slider" min="0" max="1" step="0.1" value="1">
+    <span id="volumeValue" class="control-value">100%</span>
+  </div>
+
+  <div class="control">
+    <label>Pitch</label>
+    <input type="range" id="pitchSlider" class="range-slider" min="0.5" max="2" step="0.1" value="1">
+    <span id="pitchValue" class="control-value">100%</span>
+  </div>
+
+  <div class="control">
+    <label>Speed</label>
+    <input type="range" id="rateSlider" class="range-slider" min="0.5" max="2" step="0.1" value="1">
+    <span id="rateValue" class="control-value">100%</span>
+  </div>
+  <button id="pause-btn" class="btn-hover color-3">Pause</button>
+  <button id="speak-btn" class="btn-hover color-3">Convert</button>
+  <footer>
+    <p>Developed by <strong>HilTran</strong> | <a href="https://github.com/hiltd2758" target="_blank">GitHub</a></p>
+</footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
